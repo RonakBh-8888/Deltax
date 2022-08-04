@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+	<title>Add Song</title>
+   </head>
+<body>
+    {{>navbar}}
+  <div class="signup-form" style="margin-top: 80px;">
+    <form action="/addsong" method="POST">
+		<h2>Adding Song</h2>
+		<div class="form-group">
+        	<input type="text" class="form-control" name="sname" placeholder="Song Name" required="required">
+        </div>
+        <div class="form-group">
+        	<input type="date" class="form-control" name="dor" placeholder="Date of Release" required="required">
+        </div>
+        <div class="form-group">
+			       	
+              <input class="form-control" type="file" id="formFile" name="img" placeholder="Upload Image" required="required">
+
+        </div>
+        <div class="form-group">
+			
+				
+                
+				   <select class="form-control" id="sel" name="Artist">
+                     <option>Select Artist</option>
+                     <option>Tonysing</option>
+                     <option>Mikasing</option>
+                    </select>
+                
+			      	
+        </div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Add Song</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

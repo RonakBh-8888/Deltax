@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+	<title>Add Song</title>
+   </head>
+<body>
+    {{>navbar}}
+  <div class="signup-form" style="margin-top: 80px;">
+    <form action="/addartist" method="POST">
+		<h2>AddArtist</h2>
+		<div class="form-group">
+        	<input type="text" class="form-control" name="aname" placeholder="Artist Name" required="required">
+        </div>
+        <div class="form-group">
+        	<input type="date" class="form-control" name="dob" placeholder="Date of Birth" required="required">
+        </div>
+        <div class="form-group">
+        	<textarea class="form-control" rows="5" id="bio" placeholder ="Bio" name="bio"></textarea>
+        </div>
+        
+        
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">add Artist</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
