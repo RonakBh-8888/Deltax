@@ -5,12 +5,17 @@ To Run this project For this Assessment I'm using in Backend Nodejs, expressjs a
 
 
 ***First Install node_modules***
+
+
 in Server folder
 
  npm install
  
  ****then run app****
+ 
 cd src
+
+
 ....server/src> node server.js
 
 
